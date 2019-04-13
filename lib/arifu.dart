@@ -39,7 +39,7 @@ class Arifu extends StatelessWidget {
                                   context: context,
                                   builder: (context) {
                                     return AlertDialog(
-                                      backgroundColor: Colors.purpleAccent,
+                                      backgroundColor: Colors.purple[100],
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(15.0)),
@@ -80,7 +80,7 @@ class Arifu extends StatelessWidget {
                                   context: context,
                                   builder: (context) {
                                     return AlertDialog(
-                                      backgroundColor: Colors.purpleAccent,
+                                      backgroundColor: Colors.purple[100],
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(15.0)),
@@ -121,7 +121,7 @@ class Arifu extends StatelessWidget {
                                   context: context,
                                   builder: (context) {
                                     return AlertDialog(
-                                      backgroundColor: Colors.purpleAccent,
+                                      backgroundColor: Colors.purple[100],
                                       shape: RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(15.0),
@@ -163,7 +163,7 @@ class Arifu extends StatelessWidget {
                                   context: context,
                                   builder: (context) {
                                     return AlertDialog(
-                                      backgroundColor: Colors.purpleAccent,
+                                      backgroundColor: Colors.purple[100],
                                       shape: RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(15.0),
