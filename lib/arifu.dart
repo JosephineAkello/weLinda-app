@@ -14,12 +14,50 @@ class Arifu extends StatelessWidget {
                       ? 500
                       : 900,
                   height: 250.0,
-                  child: Text(
+                  child: ListView(
+                    children: <Widget>[
+                      ListTile(
+                    title: Text(
                     'Counsellors',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0),
                   ),
-                )),
+                  ), 
+                  ListTile(
+                    title: Text('Counsellor one'),
+                    trailing: RaisedButton(
+                      color: Colors.purple,
+                      onPressed: (){
+
+                      },
+                    ),
+                  ),
+                  ListTile(
+                    title: Text('Counsellor two'),
+                    trailing: RaisedButton(
+                      color: Colors.purple,
+                      onPressed: (){
+
+                      },
+                  ),),
+                  ListTile(
+                    title: Text('Counsellor three'),
+                    trailing: RaisedButton(
+                      color: Colors.purple,
+                      onPressed: (){
+
+                      },
+                  ),),
+                  ListTile(
+                    title: Text('Counsellor four'),
+                     trailing: RaisedButton(
+                      color: Colors.purple,
+                      onPressed: (){
+
+                      },
+                  ),
+                  ),
+                ])),),
             Card(
                 child: Container(
                   padding: EdgeInsets.only(left: 16.0, right: 16.0),
