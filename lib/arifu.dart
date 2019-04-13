@@ -20,41 +20,52 @@ class Arifu extends StatelessWidget {
                     title: Text(
                     'Counsellors',
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20.0),
+                    style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
                   ), 
-                  ListTile(
+                  Card(
+                    child: ListTile(
                     title: Text('Counsellor one'),
                     trailing: RaisedButton(
+                      child: Text('Read more..', style: TextStyle(color: Colors.white),),
                       color: Colors.purple,
                       onPressed: (){
 
                       },
                     ),
+                    ),
                   ),
-                  ListTile(
+                  Card(
+                    child: ListTile(
                     title: Text('Counsellor two'),
                     trailing: RaisedButton(
+                      child: Text('Read more..',style: TextStyle(color: Colors.white),),
                       color: Colors.purple,
                       onPressed: (){
 
                       },
                   ),),
-                  ListTile(
+                  ),
+                 Card(
+                    child: ListTile(
                     title: Text('Counsellor three'),
                     trailing: RaisedButton(
+                      child: Text('Read more..',style: TextStyle(color: Colors.white),),
                       color: Colors.purple,
                       onPressed: (){
 
                       },
-                  ),),
-                  ListTile(
+                  ),),),
+                 Card(
+                    child: ListTile(
                     title: Text('Counsellor four'),
                      trailing: RaisedButton(
+                       child: Text('Read more..', style: TextStyle(color: Colors.white),),
                       color: Colors.purple,
                       onPressed: (){
 
                       },
+                  ),
                   ),
                   ),
                 ])),),
