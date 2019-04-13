@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Arifu extends StatelessWidget {
   @override
@@ -223,7 +224,7 @@ class Arifu extends StatelessWidget {
       ]),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          
+       launch("tel://116");
         },
         child: Icon(Icons.phone_in_talk),
       ),
