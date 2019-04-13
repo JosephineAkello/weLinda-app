@@ -7,16 +7,19 @@ class Ongea extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
       body: Container(
+         child: SingleChildScrollView(
         padding: EdgeInsets.only(top: 50.0),
         child: Form(
           child: username(),
         ),
       ),
-    );
+     ));
   }
 
   Widget username() {
-    return Column(children: [
+    return Column(
+     
+      children: [
       Text(
         'Provide a username',
         style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w700),
