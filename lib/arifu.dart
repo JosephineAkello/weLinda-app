@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'faq.dart';
 
 class Arifu extends StatelessWidget {
   @override
@@ -213,11 +214,7 @@ class Arifu extends StatelessWidget {
                   ? 500
                   : 900,
               height: 250.0,
-              child: Text(
-                'FAQs',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 20.0),
-              ),
+              child: Faqs(),
             ))
           ],
         )
