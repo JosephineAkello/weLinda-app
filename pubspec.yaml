@@ -26,6 +26,7 @@ dependencies:
   url_launcher: ^5.0.2
   intro_slider: ^1.2.0
   shared_preferences: ^0.5.2
+  youtube_player: ^3.2.1
 
 dev_dependencies:
   flutter_test:
