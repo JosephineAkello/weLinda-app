@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './more_pages/more_info.dart';
 import 'sexualassault.dart';
+import 'more_pages/briefvideos.dart';
 
 class Jua extends StatelessWidget {
   @override
@@ -66,7 +67,7 @@ class Jua extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => SexualAssault()));
+                              builder: (context) => BriefVideos()));
                     },
                   ),
                 ]),
