@@ -49,7 +49,7 @@ class QuickResearch extends StatelessWidget {
           ),
         ),
       ),
-       Card(
+      Card(
         child: ListTile(
           title: Text('Asumbi Treatment And Rehabilitation Centre (Karen)'),
           trailing: SizedBox(
@@ -168,7 +168,8 @@ class QuickResearch extends StatelessWidget {
       ),
       Card(
         child: ListTile(
-          title: Text('New-Life Rehabilitation Counseling​​​​ Centre – Nairobi'),
+          title:
+              Text('New-Life Rehabilitation Counseling​​​​ Centre – Nairobi'),
           trailing: SizedBox(
             child: RaisedButton(
               child: Text(
@@ -246,7 +247,8 @@ class QuickResearch extends StatelessWidget {
       ),
       Card(
         child: ListTile(
-          title: Text('Nairobi Place Addiction Treatment and Specialized Medical Centre'),
+          title: Text(
+              'Nairobi Place Addiction Treatment and Specialized Medical Centre'),
           trailing: SizedBox(
             child: RaisedButton(
               child: Text(
@@ -262,7 +264,8 @@ class QuickResearch extends StatelessWidget {
                         backgroundColor: Colors.purple[100],
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15.0)),
-                        title: Text('info@nairobi-place.org,admin@nairobi-place.org'),
+                        title: Text(
+                            'info@nairobi-place.org,admin@nairobi-place.org'),
                         content: Text('020-267839, 0735-550000, 0733-440000'),
                         actions: <Widget>[
                           MaterialButton(
@@ -285,7 +288,8 @@ class QuickResearch extends StatelessWidget {
       ),
       Card(
         child: ListTile(
-          title: Text('Mathari Hospital Treatment and ​​ Rehabilitation Centre'),
+          title:
+              Text('Mathari Hospital Treatment and ​​ Rehabilitation Centre'),
           trailing: SizedBox(
             child: RaisedButton(
               child: Text(
