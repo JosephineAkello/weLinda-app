@@ -197,13 +197,13 @@ class Arifu extends StatelessWidget {
             ),
             Card(
                 child: Container(
-              padding: EdgeInsets.only(left: 16.0, right: 16.0),
-              width: MediaQuery.of(context).orientation == Orientation.portrait
-                  ? 500
-                  : 900,
-              height: 250.0,
-              child: QuickResearch(),
-            )),
+                    padding: EdgeInsets.only(left: 16.0, right: 16.0),
+                    width: MediaQuery.of(context).orientation ==
+                            Orientation.portrait
+                        ? 500
+                        : 900,
+                    height: 250.0,
+                    child: QuickResearch())),
             Card(
                 child: Container(
               padding: EdgeInsets.only(left: 16.0, right: 16.0),
