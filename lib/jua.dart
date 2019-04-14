@@ -30,14 +30,27 @@ class Jua extends StatelessWidget {
         ),
         Card(
           child: Container(
-              padding: EdgeInsets.only(
-                left: 16.0,
-              ),
-              height: 250.0,
-              child: Text('Sexual Assault',
+            padding: EdgeInsets.only(
+              left: 16.0,
+            ),
+            height: 250.0,
+            child: ListTile(
+              
+              title: Text('Sexual Assault',
                   textAlign: TextAlign.center,
                   style:
-                      TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0))),
+                      TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0)),
+              subtitle: Column(
+                children: [
+                 Text( 'Sexual assault entails domestic violence,elderly sexual assault,rape,child sexual abuse and sexual harrassment'),
+                RaisedButton(
+                  onPressed: (){
+                    
+                  },
+                ),
+                ]),
+            ),
+          ),
         ),
       ],
     );
