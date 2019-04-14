@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'sexualassault.dart';
 
 class Jua extends StatelessWidget {
   @override
@@ -42,10 +43,14 @@ class Jua extends StatelessWidget {
                       TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0)),
               subtitle: Column(
                 children: [
-                 Text( 'Sexual assault entails domestic violence,elderly sexual assault,rape,child sexual abuse and sexual harrassment'),
+                 Text( 'Sexual assault entails any type of sexual activity or contact, including rape, that happens without your consent. Sexual assault can include non-contact activities, such as someone “flashing” you (exposing themselves to you) or forcing you to look at sexual images'
+                      ),
+                      SizedBox(height: 10.0,),
                 RaisedButton(
+                  child: Text('More..',style: TextStyle(color: Colors.white),),
+                  color: Colors.purple,
                   onPressed: (){
-                    
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> SexualAssault()));
                   },
                 ),
                 ]),
