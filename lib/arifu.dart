@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'quickreach.dart';
 import 'faq.dart';
 
 class Arifu extends StatelessWidget {
@@ -201,11 +202,7 @@ class Arifu extends StatelessWidget {
                   ? 500
                   : 900,
               height: 250.0,
-              child: Text(
-                'Quick reach',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 20.0),
-              ),
+              child: QuickResearch(),
             )),
             Card(
                 child: Container(
@@ -221,7 +218,7 @@ class Arifu extends StatelessWidget {
       ]),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-       launch("tel://1195");
+          launch("tel://1195");
         },
         child: Icon(Icons.phone_in_talk),
       ),
