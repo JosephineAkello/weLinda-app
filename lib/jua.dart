@@ -53,7 +53,8 @@ class Jua extends StatelessWidget {
                     style:
                         TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0)),
                 subtitle: Column(children: [
-                  Text(''),
+                  Text(
+                      'There is no universal way that people feel after experiencing trauma. However, some common responses include:Shame, Guilt, Anger, Loneliness/Isolation Feeling unsafe Feeling emotionally blunted or emotionally out of control,Difficulty with concentration and Difficulty staying motivated'),
                   SizedBox(
                     height: 10.0,
                   ),
