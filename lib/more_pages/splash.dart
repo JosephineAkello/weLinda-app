@@ -26,27 +26,26 @@ class MySplashScreenState extends State<MySplashScreen> {
     slides.add(
       new Slide(
         title:
-            "A VERY LONG TITLE A VERY LONG TITLE A VERY LONG TITLE A VERY LONG TITLE A VERY LONG TITLE A VERY LONG TITLE A VERY LONG TITLE A VERY LONG TITLE A VERY LONG TITLE",
+            "A GLIMPSE OF HOPE",
         maxLineTitle: 2,
         styleTitle: TextStyle(
-            color: Colors.white,
+            color: Colors.purpleAccent,
             fontSize: 30.0,
             fontWeight: FontWeight.bold,
             fontFamily: 'RobotoMono'),
-        description:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
+        description:'Bringing back our dignity starts with us.',
         styleDescription: TextStyle(
-            color: Colors.white,
+            color: Colors.purple,
             fontSize: 20.0,
             fontStyle: FontStyle.italic,
             fontFamily: 'Raleway'),
         marginDescription:
             EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0, bottom: 70.0),
-        centerWidget: Text("Replace this with a custom widget",
-            style: TextStyle(color: Colors.white)),
+        centerWidget: Text("Let's see",
+            style: TextStyle(color: Colors.purpleAccent)),
         colorBegin: Color(0xffFFDAB9),
         colorEnd: Color(0xff40E0D0),
-        backgroundImage: 'images/photo_eraser.png',
+        backgroundImage: 'assets/slider_welcome.jpeg',
         directionColorBegin: Alignment.topLeft,
         directionColorEnd: Alignment.bottomRight,
         onCenterItemPress: () {},
@@ -54,20 +53,20 @@ class MySplashScreenState extends State<MySplashScreen> {
     );
     slides.add(
       new Slide(
-        title: "MUSEUM",
+        title: "WHO MAKES UP OUR SOCIETY?",
         styleTitle: TextStyle(
-            color: Color(0xffD02090),
+            color: Colors.purple,
             fontSize: 30.0,
             fontWeight: FontWeight.bold,
             fontFamily: 'RobotoMono'),
         description:
-            "Ye indulgence unreserved connection alteration appearance",
+            "If we take care of ourselves, Our young generation, Our women : Then we have a brighter future",
         styleDescription: TextStyle(
-            color: Color(0xffD02090),
+            color: Colors.purple,
             fontSize: 20.0,
             fontStyle: FontStyle.italic,
             fontFamily: 'Raleway'),
-        pathImage: "images/photo_museum.png",
+        pathImage: "assets/female.png",
         colorBegin: Color(0xffFFFACD),
         colorEnd: Color(0xffFF6347),
         directionColorBegin: Alignment.topRight,
@@ -76,20 +75,20 @@ class MySplashScreenState extends State<MySplashScreen> {
     );
     slides.add(
       new Slide(
-        title: "COFFEE",
+        title: "FINALLY",
         styleTitle: TextStyle(
-            color: Color(0xffD02090),
+            color: Colors.purple,
             fontSize: 30.0,
             fontWeight: FontWeight.bold,
             fontFamily: 'RobotoMono'),
-        description:
-            "Much evil soon high in hope do view. Out may few northward believing attempted. Yet timed being songs marry one defer men our. Although finished blessing do of",
+        description:'Begining from you and me, let\'s endevour for the best of ourselves' ,
         styleDescription: TextStyle(
-            color: Color(0xffD02090),
+          color: Colors.purple,
             fontSize: 20.0,
             fontStyle: FontStyle.italic,
             fontFamily: 'Raleway'),
-        pathImage: "images/photo_coffee_shop.png",
+        pathImage: "assets/karonei.png",
+
         colorBegin: Color(0xffFFA500),
         colorEnd: Color(0xff7FFFD4),
         directionColorBegin: Alignment.topCenter,
