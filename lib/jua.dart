@@ -5,8 +5,7 @@ import 'sexualassault.dart';
 class Jua extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home:ListView(
+    return ListView(
       children: [
         Card(
           child: Container(
@@ -77,6 +76,6 @@ class Jua extends StatelessWidget {
            
         ),
       ],
-    ), );
+    );
   }
 }
