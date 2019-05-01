@@ -12,6 +12,7 @@ class BriefVideos extends StatefulWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('Jua More'),),
       body: ListView(
         children: [
           YoutubePlayer(
