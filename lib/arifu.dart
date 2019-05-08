@@ -8,8 +8,6 @@ class Arifu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(children: [
-        Column(
-          children: <Widget>[
             Card(
               child: Container(
                   padding: EdgeInsets.only(left: 16.0, right: 16.0),
@@ -18,7 +16,7 @@ class Arifu extends StatelessWidget {
                           ? 500
                           : 900,
                   height: 250.0,
-                  child: ListView(children: <Widget>[
+                  child: 
                     ListTile(
                       title: Text(
                         'Counsellors',
@@ -26,175 +24,17 @@ class Arifu extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 20.0, fontWeight: FontWeight.bold),
                       ),
+                      subtitle: Column(
+                        children: [
+                          Image.asset(''),
+                          Text('Dont get stressed!!Please feel free to consult these counsellors',  style: TextStyle(fontWeight: FontWeight.bold),),
+                          RaisedButton(onPressed: (){},
+                           child: Text('Check them out', style: TextStyle(fontWeight: FontWeight.bold),),),
+                        ],
                     ),
-                    Card(
-                      child: ListTile(
-                        title: Text('Counsellor 1'),
-                        trailing: SizedBox(
-                          child: RaisedButton(
-                            child: Text(
-                              'Read more..',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            color: Colors.purple,
-                            onPressed: () {
-                              showDialog(
-                                  context: context,
-                                  builder: (context) {
-                                    return AlertDialog(
-                                      backgroundColor: Colors.purple[100],
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(15.0)),
-                                      title: Text('Cousellor name'),
-                                      content: Text('phonenumber'),
-                                      actions: <Widget>[
-                                        MaterialButton(
-                                          onPressed: () {
-                                            Navigator.pop(context);
-                                          },
-                                          child: Text(
-                                            'close',
-                                            style: TextStyle(
-                                                color: Colors.purple,
-                                                fontSize: 15),
-                                          ),
-                                        ),
-                                      ],
-                                    );
-                                  });
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                    Card(
-                      child: ListTile(
-                        title: Text('Counsellor 2'),
-                        trailing: SizedBox(
-                          child: RaisedButton(
-                            child: Text(
-                              'Read more..',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            color: Colors.purple,
-                            onPressed: () {
-                              showDialog(
-                                  context: context,
-                                  builder: (context) {
-                                    return AlertDialog(
-                                      backgroundColor: Colors.purple[100],
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(15.0)),
-                                      title: Text('Cousellor name'),
-                                      content: Text('phonenumber'),
-                                      actions: <Widget>[
-                                        MaterialButton(
-                                          onPressed: () {
-                                            Navigator.pop(context);
-                                          },
-                                          child: Text(
-                                            'close',
-                                            style: TextStyle(
-                                                color: Colors.purple,
-                                                fontSize: 15),
-                                          ),
-                                        ),
-                                      ],
-                                    );
-                                  });
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                    Card(
-                      child: ListTile(
-                        title: Text('Counsellor 3'),
-                        trailing: SizedBox(
-                          child: RaisedButton(
-                            child: Text(
-                              'Read more..',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            color: Colors.purple,
-                            onPressed: () {
-                              showDialog(
-                                  context: context,
-                                  builder: (context) {
-                                    return AlertDialog(
-                                      backgroundColor: Colors.purple[100],
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                      ),
-                                      title: Text('Cousellor name'),
-                                      content: Text('phonenumber'),
-                                      actions: <Widget>[
-                                        MaterialButton(
-                                          onPressed: () {
-                                            Navigator.pop(context);
-                                          },
-                                          child: Text(
-                                            'close',
-                                            style: TextStyle(
-                                                color: Colors.purple,
-                                                fontSize: 15),
-                                          ),
-                                        ),
-                                      ],
-                                    );
-                                  });
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                    Card(
-                      child: ListTile(
-                        title: Text('Counsellor 4'),
-                        trailing: SizedBox(
-                          child: RaisedButton(
-                            child: Text(
-                              'Read more..',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            color: Colors.purple,
-                            onPressed: () {
-                              showDialog(
-                                  context: context,
-                                  builder: (context) {
-                                    return AlertDialog(
-                                      backgroundColor: Colors.purple[100],
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                      ),
-                                      title: Text('Cousellor name'),
-                                      content: Text('phonenumber'),
-                                      actions: <Widget>[
-                                        MaterialButton(
-                                          onPressed: () {
-                                            Navigator.pop(context);
-                                          },
-                                          child: Text(
-                                            'close',
-                                            style: TextStyle(
-                                                color: Colors.purple,
-                                                fontSize: 15),
-                                          ),
-                                        ),
-                                      ],
-                                    );
-                                  });
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                  ])),
-            ),
+                  ),
+                   ),
+                   ),
             Card(
                 child: Container(
               padding: EdgeInsets.only(left: 16.0, right: 16.0),
@@ -214,8 +54,8 @@ class Arifu extends StatelessWidget {
               child: Faqs(),
             ))
           ],
-        )
-      ]),
+        ),
+      
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           launch("tel://1195");
