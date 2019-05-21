@@ -30,6 +30,7 @@ class Welinda extends StatelessWidget {
             hasRun = true;
           }
           return MaterialApp(
+              debugShowCheckedModeBanner : false,
             theme: ThemeData(
                 primarySwatch: Colors.purple,
                 accentColor: Color.fromRGBO(201, 230, 245, 1.0)),

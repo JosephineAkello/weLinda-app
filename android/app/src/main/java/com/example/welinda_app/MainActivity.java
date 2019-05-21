@@ -1,4 +1,4 @@
-package com.example.welinda_app;
+package com.podii.welinda_app;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

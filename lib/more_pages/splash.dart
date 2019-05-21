@@ -87,7 +87,7 @@ class MySplashScreenState extends State<MySplashScreen> {
             fontSize: 20.0,
             fontStyle: FontStyle.italic,
             fontFamily: 'Raleway'),
-        pathImage: "assets/karonei.png",
+        pathImage: "assets/karonei.jpg",
 
         colorBegin: Color(0xffFFA500),
         colorEnd: Color(0xff7FFFD4),
