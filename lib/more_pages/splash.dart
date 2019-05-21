@@ -157,7 +157,7 @@ class MySplashScreenState extends State<MySplashScreen> {
       locale: 'en',
 
       // Show or hide status bar
-      shouldHideStatusBar: true,
+      shouldHideStatusBar: false,
     );
   }
 }
