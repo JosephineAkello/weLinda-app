@@ -50,6 +50,8 @@ flutter:
      - assets/fight.jpeg
      - assets/hdfgdhg.png
      - assets/if.jpeg
+     - assets/counsel.png
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:
