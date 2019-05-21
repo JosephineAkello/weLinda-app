@@ -19,7 +19,7 @@ class QuickResearch extends StatelessWidget {
                 'Read more..',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.purple,
+
               onPressed: () {
                 showDialog(
                     context: context,
@@ -58,7 +58,7 @@ class QuickResearch extends StatelessWidget {
                 'Read more..',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.purple,
+
               onPressed: () {
                 showDialog(
                     context: context,
@@ -97,7 +97,7 @@ class QuickResearch extends StatelessWidget {
                 'Read more..',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.purple,
+
               onPressed: () {
                 showDialog(
                     context: context,
@@ -136,7 +136,7 @@ class QuickResearch extends StatelessWidget {
                 'Read more..',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.purple,
+
               onPressed: () {
                 showDialog(
                     context: context,
@@ -176,7 +176,7 @@ class QuickResearch extends StatelessWidget {
                 'Read more..',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.purple,
+
               onPressed: () {
                 showDialog(
                     context: context,
@@ -215,7 +215,7 @@ class QuickResearch extends StatelessWidget {
                 'Read more..',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.purple,
+
               onPressed: () {
                 showDialog(
                     context: context,
@@ -255,7 +255,7 @@ class QuickResearch extends StatelessWidget {
                 'Read more..',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.purple,
+
               onPressed: () {
                 showDialog(
                     context: context,
@@ -296,7 +296,7 @@ class QuickResearch extends StatelessWidget {
                 'Read more..',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.purple,
+
               onPressed: () {
                 showDialog(
                     context: context,
@@ -335,7 +335,7 @@ class QuickResearch extends StatelessWidget {
                 'Read more..',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.purple,
+
               onPressed: () {
                 showDialog(
                     context: context,
@@ -374,7 +374,7 @@ class QuickResearch extends StatelessWidget {
                 'Read more..',
                 style: TextStyle(color: Colors.white),
               ),
-              color: Colors.purple,
+
               onPressed: () {
                 showDialog(
                     context: context,
