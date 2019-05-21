@@ -35,6 +35,9 @@ class Jua extends StatelessWidget {
                       }, child: Text('More...'))
                     ])),
           ), ),
+        SizedBox(
+          height: 10.0,
+        ),
           Card(
             child: Container(
               padding: EdgeInsets.only(
@@ -69,6 +72,9 @@ class Jua extends StatelessWidget {
               ),
             ),
           ),
+        SizedBox(
+          height: 10.0,
+        ),
           Card(
             child: Container(
               padding: EdgeInsets.only(
