@@ -23,7 +23,6 @@ class Welinda extends StatelessWidget {
     return FutureBuilder<dynamic>(
         future: checkIfFirstLaunch(),
         builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-          print('SNAPSHOT: ' + snapshot.data.toString());
           if (snapshot.data == null) {
             hasRun = false;
           } else {
@@ -32,6 +31,7 @@ class Welinda extends StatelessWidget {
           return MaterialApp(
               debugShowCheckedModeBanner : false,
             theme: ThemeData(
+              buttonColor: Colors.blueGrey,
                 primarySwatch: Colors.purple,
                 accentColor: Color.fromRGBO(201, 230, 245, 1.0)),
             home: !hasRun
