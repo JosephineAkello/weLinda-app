@@ -28,6 +28,14 @@ class Welinda extends StatelessWidget {
           } else {
             hasRun = true;
           }
+          switch(snapshot.connectionState){
+          case ConnectionState.none:
+            return Container();
+            case ConnectionState.waiting:
+              return Container();
+            case ConnectionState.active:
+              return Container();
+            case ConnectionState.done:
           return MaterialApp(
               debugShowCheckedModeBanner : false,
             theme: ThemeData(
@@ -70,7 +78,7 @@ class Welinda extends StatelessWidget {
                       ]),
                     ),
                   ),
-          );
+          );}
         });
   }
 }
