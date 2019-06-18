@@ -9,14 +9,25 @@ import 'more_pages/splash.dart';
 void main() {
   runApp(Welinda());
 }
+bool hasRun = false;
+enum selectedIndex {map, partners, about}
 
-class Welinda extends StatelessWidget {
-  bool hasRun = false;
+class Welinda extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return WelindaState();
+  }
+}
+
+
+class WelindaState extends State<Welinda> {
 
   Future<dynamic> checkIfFirstLaunch() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     return prefs.getBool('hasRun');
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +59,36 @@ class Welinda extends StatelessWidget {
                     length: 3,
                     child: Scaffold(
                       appBar: AppBar(
+                        actions: <Widget>[
+                          /*
+                          Add an option to open new page here
+                           */
+
+                          PopupMenuButton<selectedIndex>(
+                            onSelected: (selectedIndex value) {
+                              setState(() {
+
+                              });
+                            },
+                            itemBuilder: (BuildContext context) => <PopupMenuItem<selectedIndex>>[
+                              const PopupMenuItem<selectedIndex>(
+                                value: selectedIndex.map,
+                                child: Text('Maps'),
+                              ),
+                              const PopupMenuItem<selectedIndex>(
+                                value: selectedIndex.partners,
+                                child: Text('Partners'),
+                              ),
+                              const PopupMenuItem<selectedIndex>(
+                                value: selectedIndex.about,
+                                child: Text('About'),
+                              ),
+
+
+                            ],
+                          ),
+
+                        ],
                         elevation:
                             Theme.of(context).platform == TargetPlatform.iOS
                                 ? 0.0
@@ -81,4 +122,6 @@ class Welinda extends StatelessWidget {
           );}
         });
   }
+
+
 }
