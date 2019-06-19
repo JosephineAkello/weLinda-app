@@ -71,3 +71,7 @@ android/key.properties
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+# secure key
+config/welinda.json
+android/app/google-services.json
