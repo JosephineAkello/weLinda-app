@@ -7,7 +7,7 @@ packages:
       name: async
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.0"
+    version: "2.2.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -41,30 +41,25 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_localizations:
-    dependency: transitive
-    description: flutter
-    source: sdk
-    version: "0.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
-  intl:
-    dependency: transitive
+  google_maps_flutter:
+    dependency: "direct main"
     description:
-      name: intl
+      name: google_maps_flutter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.15.8"
+    version: "0.5.17"
   intro_slider:
     dependency: "direct main"
     description:
       name: intro_slider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.0"
+    version: "1.2.3"
   matcher:
     dependency: transitive
     description:
@@ -99,7 +94,7 @@ packages:
       name: quiver
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.2"
+    version: "2.0.3"
   share:
     dependency: transitive
     description:
@@ -113,7 +108,7 @@ packages:
       name: shared_preferences
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.2"
+    version: "0.5.3+1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -160,7 +155,7 @@ packages:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.4"
+    version: "0.2.5"
   typed_data:
     dependency: transitive
     description:
@@ -174,7 +169,7 @@ packages:
       name: url_launcher
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.0.2"
+    version: "5.0.3"
   vector_math:
     dependency: transitive
     description:
@@ -191,4 +186,4 @@ packages:
     version: "3.4.1"
 sdks:
   dart: ">=2.2.0 <3.0.0"
-  flutter: ">=0.5.6 <2.0.0"
+  flutter: ">=1.5.0 <2.0.0"
