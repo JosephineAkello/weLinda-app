@@ -2,7 +2,15 @@ import 'package:flutter/material.dart';
 
 class Counsellors extends StatelessWidget {
   Widget build(BuildContext context) {
-    return ListView(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Find counsellors'),
+       
+        centerTitle: true,
+      ),
+       backgroundColor: Colors.purple,
+      body:Center(
+        child:ListView(
       children: [
         Card(
           child: ListTile(
@@ -159,10 +167,11 @@ class Counsellors extends StatelessWidget {
                       });
                 },
               ),
+              
             ),
           ),
         ),
       ],
-    );
+   ),), );
   }
 }
