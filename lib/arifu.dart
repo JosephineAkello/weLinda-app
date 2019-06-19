@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-
-//import 'more_pages/counsellors.dart';
 import 'more_pages/counsellors.dart';
 import 'quickreach.dart';
 import 'faq.dart';
@@ -47,7 +45,12 @@ class Arifu extends StatelessWidget {
                       height: 10.0,
                     ),
                     RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Counsellors()));
+                      },
                       child: Text(
                         'Check them out',
                         style: TextStyle(
@@ -81,7 +84,9 @@ class Arifu extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 20.0, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(
+                      height: 10.0,
+                    ),
                     Text(
                         'You maybe having questions about Gender Based Violence, feel free to see the kind of questions others have asked before concerning the same.'),
                     RaisedButton(
