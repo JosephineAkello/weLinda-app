@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './more_pages/chatspace/landing.dart';
+
 
 
 class Ongea extends StatelessWidget {
@@ -10,13 +12,13 @@ class Ongea extends StatelessWidget {
          child: SingleChildScrollView(
         padding: EdgeInsets.only(top: 50.0),
         child: Form(
-          child: username(),
+          child: username(context),
         ),
       ),
      ));
   }
 
-  Widget username() {
+  Widget username(BuildContext context) {
     return Column(
      
       children: [
@@ -39,7 +41,11 @@ class Ongea extends StatelessWidget {
         },
       ),
       FlatButton.icon(
-          onPressed: () {}, icon: Icon(Icons.check), label: Text('Proceed'))
+          onPressed: () {
+            Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context){
+              return ChatSpace();
+            }));
+          }, icon: Icon(Icons.check), label: Text('Proceed'))
     ]);
   }
 }
