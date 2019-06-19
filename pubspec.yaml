@@ -27,6 +27,7 @@ dependencies:
   intro_slider: ^1.2.0
   shared_preferences: ^0.5.2
   youtube_player: ^3.2.1
+  google_maps_flutter: 0.5.17
 
 dev_dependencies:
   flutter_test:
