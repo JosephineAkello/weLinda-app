@@ -45,6 +45,7 @@ class Arifu extends StatelessWidget {
                       height: 10.0,
                     ),
                     RaisedButton(
+                      color: Colors.purple,
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -90,6 +91,7 @@ class Arifu extends StatelessWidget {
                     Text(
                         'You maybe having questions about Gender Based Violence, feel free to see the kind of questions others have asked before concerning the same.'),
                     RaisedButton(
+                      color: Colors.purple,
                       child: Text(
                         "Read FAQs",
                         style: TextStyle(color: Colors.white),
