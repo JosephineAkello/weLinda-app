@@ -74,3 +74,4 @@ android/key.properties
 
 # secure key
 config/welinda.json
+android/app/google-services.json
