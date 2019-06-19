@@ -6,6 +6,7 @@ class QuickResearch extends StatelessWidget {
       appBar: AppBar(
         title: Text('Quick Reach'),
       ),
+      backgroundColor: Colors.purple,
       body: ListView(children: <Widget>[
         Card(
           child: ListTile(
