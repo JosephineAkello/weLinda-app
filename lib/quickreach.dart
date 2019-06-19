@@ -6,7 +6,6 @@ class QuickResearch extends StatelessWidget {
       appBar: AppBar(
         title: Text('Quick Reach'),
       ),
-      backgroundColor: Colors.purple,
       body: ListView(children: <Widget>[
         Card(
           child: ListTile(
@@ -23,10 +22,13 @@ class QuickResearch extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          backgroundColor: Colors.purple[100],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
-                          title: Text('justin.farrar@yahoo.com'),
+                          title: Text(
+                            'justin.farrar@yahoo.com',
+                            style:
+                                TextStyle(color: Colors.purple, fontSize: 20.0),
+                          ),
                           content: Text('0722867693, 0726552476, 0722901804'),
                           actions: <Widget>[
                             MaterialButton(
@@ -36,7 +38,7 @@ class QuickResearch extends StatelessWidget {
                               child: Text(
                                 'close',
                                 style: TextStyle(
-                                    color: Colors.purple, fontSize: 15),
+                                    color: Colors.purple, fontSize: 20.0),
                               ),
                             ),
                           ],
@@ -62,10 +64,13 @@ class QuickResearch extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          backgroundColor: Colors.purple[100],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
-                          title: Text('info@asumbi-tcentre.org'),
+                          title: Text(
+                            'info@asumbi-tcentre.org',
+                            style:
+                                TextStyle(color: Colors.purple, fontSize: 20.0),
+                          ),
                           content: Text('020-2664540, 0721287822'),
                           actions: <Widget>[
                             MaterialButton(
@@ -75,7 +80,7 @@ class QuickResearch extends StatelessWidget {
                               child: Text(
                                 'close',
                                 style: TextStyle(
-                                    color: Colors.purple, fontSize: 15),
+                                    color: Colors.purple, fontSize: 20.0),
                               ),
                             ),
                           ],
@@ -101,10 +106,13 @@ class QuickResearch extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          backgroundColor: Colors.purple[100],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
-                          title: Text('dmh.knh@gmail.com​​ ​​'),
+                          title: Text(
+                            'dmh.knh@gmail.com​​ ​​',
+                            style:
+                                TextStyle(color: Colors.purple, fontSize: 20.0),
+                          ),
                           content: Text('0713033028, 2726300-9 Ext. 44101'),
                           actions: <Widget>[
                             MaterialButton(
@@ -114,7 +122,7 @@ class QuickResearch extends StatelessWidget {
                               child: Text(
                                 'close',
                                 style: TextStyle(
-                                    color: Colors.purple, fontSize: 15),
+                                    color: Colors.purple, fontSize: 20.0),
                               ),
                             ),
                           ],
@@ -140,10 +148,13 @@ class QuickResearch extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          backgroundColor: Colors.purple[100],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
-                          title: Text('info@precisioncounseling.org'),
+                          title: Text(
+                            'info@precisioncounseling.org',
+                            style:
+                                TextStyle(color: Colors.purple, fontSize: 20.0),
+                          ),
                           content: Text('0702378314 ,​​ 0721305450'),
                           actions: <Widget>[
                             MaterialButton(
@@ -153,7 +164,7 @@ class QuickResearch extends StatelessWidget {
                               child: Text(
                                 'close',
                                 style: TextStyle(
-                                    color: Colors.purple, fontSize: 15),
+                                    color: Colors.purple, fontSize: 20.0),
                               ),
                             ),
                           ],
@@ -180,10 +191,13 @@ class QuickResearch extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          backgroundColor: Colors.purple[100],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
-                          title: Text('info@newliferehab.co.ke'),
+                          title: Text(
+                            'info@newliferehab.co.ke',
+                            style:
+                                TextStyle(color: Colors.purple, fontSize: 20.0),
+                          ),
                           content: Text('0722 785 440'),
                           actions: <Widget>[
                             MaterialButton(
@@ -193,7 +207,7 @@ class QuickResearch extends StatelessWidget {
                               child: Text(
                                 'close',
                                 style: TextStyle(
-                                    color: Colors.purple, fontSize: 15),
+                                    color: Colors.purple, fontSize: 20.0),
                               ),
                             ),
                           ],
@@ -219,10 +233,13 @@ class QuickResearch extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          backgroundColor: Colors.purple[100],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
-                          title: Text('erc.trust@gmail.com'),
+                          title: Text(
+                            'erc.trust@gmail.com',
+                            style:
+                                TextStyle(color: Colors.purple, fontSize: 20.0),
+                          ),
                           content: Text('0722565397, 0732761666'),
                           actions: <Widget>[
                             MaterialButton(
@@ -232,7 +249,7 @@ class QuickResearch extends StatelessWidget {
                               child: Text(
                                 'close',
                                 style: TextStyle(
-                                    color: Colors.purple, fontSize: 15),
+                                    color: Colors.purple, fontSize: 20.0),
                               ),
                             ),
                           ],
@@ -259,11 +276,13 @@ class QuickResearch extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          backgroundColor: Colors.purple[100],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
                           title: Text(
-                              'info@nairobi-place.org,admin@nairobi-place.org'),
+                            'info@nairobi-place.org,admin@nairobi-place.org',
+                            style:
+                                TextStyle(color: Colors.purple, fontSize: 20.0),
+                          ),
                           content: Text('020-267839, 0735-550000, 0733-440000'),
                           actions: <Widget>[
                             MaterialButton(
@@ -273,7 +292,7 @@ class QuickResearch extends StatelessWidget {
                               child: Text(
                                 'close',
                                 style: TextStyle(
-                                    color: Colors.purple, fontSize: 15),
+                                    color: Colors.purple, fontSize: 20.0),
                               ),
                             ),
                           ],
@@ -300,10 +319,13 @@ class QuickResearch extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          backgroundColor: Colors.purple[100],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
-                          title: Text('Not Available'),
+                          title: Text(
+                            'Not Available',
+                            style:
+                                TextStyle(color: Colors.purple, fontSize: 20.0),
+                          ),
                           content: Text('0703 848536, 0721336017'),
                           actions: <Widget>[
                             MaterialButton(
@@ -313,7 +335,7 @@ class QuickResearch extends StatelessWidget {
                               child: Text(
                                 'close',
                                 style: TextStyle(
-                                    color: Colors.purple, fontSize: 15),
+                                    color: Colors.purple, fontSize: 20.0),
                               ),
                             ),
                           ],
@@ -339,10 +361,13 @@ class QuickResearch extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          backgroundColor: Colors.purple[100],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
-                          title: Text('evans@sapta.or.ke'),
+                          title: Text(
+                            'evans@sapta.or.ke',
+                            style:
+                                TextStyle(color: Colors.purple, fontSize: 20.0),
+                          ),
                           content: Text('0724511709, 0722216032'),
                           actions: <Widget>[
                             MaterialButton(
@@ -352,7 +377,7 @@ class QuickResearch extends StatelessWidget {
                               child: Text(
                                 'close',
                                 style: TextStyle(
-                                    color: Colors.purple, fontSize: 15),
+                                    color: Colors.purple, fontSize: 20.0),
                               ),
                             ),
                           ],
@@ -378,10 +403,13 @@ class QuickResearch extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          backgroundColor: Colors.purple[100],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0)),
-                          title: Text('alex.ongadi@yahoo.com'),
+                          title: Text(
+                            'alex.ongadi@yahoo.com',
+                            style:
+                                TextStyle(color: Colors.purple, fontSize: 20.0),
+                          ),
                           content: Text('0727367837/0722503743'),
                           actions: <Widget>[
                             MaterialButton(
@@ -391,7 +419,7 @@ class QuickResearch extends StatelessWidget {
                               child: Text(
                                 'close',
                                 style: TextStyle(
-                                    color: Colors.purple, fontSize: 15),
+                                    color: Colors.purple, fontSize: 20.0),
                               ),
                             ),
                           ],
