@@ -56,6 +56,7 @@ flutter:
      - assets/female.png
      - assets/karonei.jpg
      - assets/slider_welcome.jpeg
+     - assets/assistant.png
      - config/welinda.json
 
   # To add assets to your application, add an assets section, like this:
