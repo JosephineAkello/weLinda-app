@@ -50,6 +50,7 @@ class WelindaState extends State<Welinda> {
           return MaterialApp(
               debugShowCheckedModeBanner : false,
             theme: ThemeData(
+              fontFamily: 'Halvetica',
               buttonColor: Colors.blueGrey,
                 primarySwatch: Colors.purple,
                 accentColor: Color.fromRGBO(201, 230, 245, 1.0)),
