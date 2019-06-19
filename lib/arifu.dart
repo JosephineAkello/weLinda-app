@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 //import 'more_pages/counsellors.dart';
+import 'more_pages/counsellors.dart';
 import 'quickreach.dart';
 import 'faq.dart';
 
@@ -39,7 +40,7 @@ class Arifu extends StatelessWidget {
                       height: 10.0,
                     ),
                     Image.asset(
-                      'assets/dead.jpeg',
+                      'assets/counsel.png',
                       fit: BoxFit.cover,
                     ),
                     SizedBox(

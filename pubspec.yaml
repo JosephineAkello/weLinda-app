@@ -53,6 +53,8 @@ flutter:
      - assets/female.png
      - assets/karonei.jpg
      - assets/slider_welcome.jpeg
+     - assets/counsel.png
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:
