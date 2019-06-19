@@ -121,6 +121,14 @@ class ChatMessage extends StatelessWidget {
             new Text(this.name,
                 style: new TextStyle(fontWeight: FontWeight.bold)),
             new Container(
+
+              padding: EdgeInsets.all(15.0),
+              decoration: ShapeDecoration(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(9.0),
+                ),
+                color: Colors.purple[200],
+              ),
               margin: const EdgeInsets.only(top: 5.0),
               child: new Text(text),
             ),
@@ -138,6 +146,13 @@ class ChatMessage extends StatelessWidget {
           children: <Widget>[
             new Text(this.name, style: Theme.of(context).textTheme.subhead),
             new Container(
+              padding: EdgeInsets.all(15.0),
+              decoration: ShapeDecoration(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(9.0),
+                ),
+                color: Colors.purple[200],
+              ),
               margin: const EdgeInsets.only(top: 5.0),
               child: new Text(text),
             ),
