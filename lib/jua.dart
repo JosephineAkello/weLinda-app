@@ -30,87 +30,91 @@ class Jua extends StatelessWidget {
                         '5. Society\n',
                         style: TextStyle(fontWeight: FontWeight.w500),
                       ),
-                      FlatButton(onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>MoreInfo() ));
-                      }, child: Text('More...'))
+                      FlatButton(
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => MoreInfo()));
+                          },
+                          child: Text('More...'))
                     ])),
-          ), ),
+          ),
+        ),
         SizedBox(
           height: 10.0,
         ),
-          Card(
-            child: Container(
-              padding: EdgeInsets.only(
-                left: 16.0,
-              ),
-              height: 250.0,
-              child: ListTile(
-                title: Text("There's hope",
-                    textAlign: TextAlign.center,
-                    style:
-                        TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0)),
-                subtitle: Column(children: [
-                  Text(
-                      'There is no universal way that people feel after experiencing trauma. However, some common responses include:Shame, Guilt, Anger, Loneliness/Isolation Feeling unsafe Feeling emotionally blunted or emotionally out of control,Difficulty with concentration and Difficulty staying motivated'),
-                  SizedBox(
-                    height: 10.0,
+        Card(
+          child: Container(
+            padding: EdgeInsets.only(
+              left: 16.0,
+            ),
+            height: 250.0,
+            child: ListTile(
+              title: Text("There's hope",
+                  textAlign: TextAlign.center,
+                  style:
+                      TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0)),
+              subtitle: Column(children: [
+                Text(
+                    'There is no universal way that people feel after experiencing trauma. However, some common responses include:Shame, Guilt, Anger, Loneliness/Isolation Feeling unsafe Feeling emotionally blunted or emotionally out of control,Difficulty with concentration and Difficulty staying motivated'),
+                SizedBox(
+                  height: 10.0,
+                ),
+                RaisedButton(
+                  child: Text(
+                    'More..',
+                    style: TextStyle(color: Colors.white),
                   ),
-                  RaisedButton(
-                    child: Text(
-                      'More..',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    color: Colors.purple,
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => BriefVideos()));
-                    },
-                  ),
-                ]),
-              ),
+                  color: Colors.purple,
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => BriefVideos()));
+                  },
+                ),
+              ]),
             ),
           ),
+        ),
         SizedBox(
           height: 10.0,
         ),
-          Card(
-            child: Container(
-              padding: EdgeInsets.only(
-                left: 16.0,
-              ),
-              height: 250.0,
-              child: ListTile(
-                title: Text('Sexual Assault',
-                    textAlign: TextAlign.center,
-                    style:
-                        TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0)),
-                subtitle: Column(children: [
-                  Text(
-                      'Sexual assault entails any type of sexual activity or contact, including rape, that happens without your consent. Sexual assault can include non-contact activities, such as someone “flashing” you (exposing themselves to you) or forcing you to look at sexual images'),
-                  SizedBox(
-                    height: 10.0,
+        Card(
+          child: Container(
+            padding: EdgeInsets.only(
+              left: 16.0,
+            ),
+            height: 250.0,
+            child: ListTile(
+              title: Text('Sexual Assault',
+                  textAlign: TextAlign.center,
+                  style:
+                      TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0)),
+              subtitle: Column(children: [
+                Text(
+                    'Sexual assault entails any type of sexual activity or contact, including rape, that happens without your consent. Sexual assault can include non-contact activities, such as someone “flashing” you (exposing themselves to you) or forcing you to look at sexual images'),
+                SizedBox(
+                  height: 10.0,
+                ),
+                RaisedButton(
+                  child: Text(
+                    'More..',
+                    style: TextStyle(color: Colors.white),
                   ),
-                  RaisedButton(
-                    child: Text(
-                      'More..',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    color: Colors.purple,
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => SexualAssault()));
-                    },
-                  ),
-                ]),
-              ),
+                  color: Colors.purple,
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SexualAssault()));
+                  },
+                ),
+                Padding(
+                  padding: EdgeInsets.all(20.0),
+                  child: Text('DIAL *384*220# TO SUBSCRIBE TO WeLinda Services',style:
+                      TextStyle(fontWeight: FontWeight.w700, fontSize: 18.0)),),
+              ]),
             ),
           ),
-            
-       
+        ),
       ],
     );
   }

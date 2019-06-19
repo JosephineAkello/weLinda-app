@@ -27,6 +27,7 @@ dependencies:
   intro_slider: ^1.2.0
   shared_preferences: ^0.5.2
   youtube_player: ^3.2.1
+  google_maps_flutter: 0.5.17
 
   flutter_dialogflow: ^0.1.2
   tts: ^1.0.1
@@ -63,6 +64,8 @@ flutter:
      - assets/assistant.png
      - config/welinda.json
      - assets/full-list-of-bad-words_text-file_2018_07_30.txt
+     - assets/counsel.png
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:

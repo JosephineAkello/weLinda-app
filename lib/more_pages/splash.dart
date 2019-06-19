@@ -154,7 +154,7 @@ class MySplashScreenState extends State<MySplashScreen> {
       sizeDot: 13.0,
 
       // Locale
-      locale: 'en',
+      // locale: 'en',
 
       // Show or hide status bar
       shouldHideStatusBar: false,
