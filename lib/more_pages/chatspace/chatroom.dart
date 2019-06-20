@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'dart:async';
+import 'package:flutter/services.dart';
+import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
+import './model/word_receipt.dart';
 
 final reference = FirebaseDatabase.instance.reference().child('messages');
 
@@ -13,11 +16,16 @@ const String _name = "Your Name";
 
 @override
 class ChatMessage extends StatefulWidget {
-  ChatMessage({this.snapshot, this.animation, this.userNameAsSent});
+  ChatMessage(
+      {this.snapshot,
+      this.animation,
+      this.userNameAsSent,
+      @required this.list});
 
   final DataSnapshot snapshot;
   final Animation animation;
   final String userNameAsSent;
+  final List<WordReceipt> list;
 
   @override
   State<StatefulWidget> createState() {
@@ -101,7 +109,9 @@ class ChatMessageState extends State<ChatMessage> {
 class ChatRoom extends StatefulWidget {
   final String currentUserName;
 
-  ChatRoom({this.currentUserName});
+  ChatRoom({
+    this.currentUserName,
+  });
 
   @override
   State createState() => new ChatRoomState();
@@ -110,6 +120,68 @@ class ChatRoom extends StatefulWidget {
 class ChatRoomState extends State<ChatRoom> {
   final TextEditingController _textController = new TextEditingController();
   bool _isComposing = false;
+  List<WordReceipt> list;
+
+  showWarning(String warningMessage, BuildContext context) {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            backgroundColor: Colors.purple[100],
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15.0)),
+            title: Text('Warning!'),
+            content: Text(warningMessage),
+            actions: <Widget>[
+              MaterialButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text(
+                  'close',
+                  style: TextStyle(color: Colors.purple, fontSize: 15),
+                ),
+              ),
+            ],
+          );
+        });
+  }
+
+  Future<bool> filterWording(String text) async {
+    /*
+    Returns false if all words are cool, true if there's stupidity.
+     */
+
+    bool isExistBad;
+
+    List<String> result = text.split(" ");
+
+    result.forEach((word) {
+      isExistBad = list
+                  .where((WordReceipt receipt) {
+                    return receipt.name == word.toLowerCase();
+                  })
+                  .toList()
+                  .length >
+              0
+          ? true
+          : false;
+    });
+    return isExistBad;
+  }
+
+  loadNames() async {
+    String jolo = await rootBundle
+        .loadString('assets/full-list-of-bad-words_text-file_2018_07_30.txt');
+    list =
+        LineSplitter().convert(jolo).map((s) => WordReceipt(name: s)).toList();
+  }
+
+  @override
+  void initState() {
+    loadNames();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -124,6 +196,7 @@ class ChatRoomState extends State<ChatRoom> {
           itemBuilder: (_, DataSnapshot snapshot, Animation<double> animation,
               int index) {
             return new ChatMessage(
+              list: list,
               snapshot: snapshot,
               animation: animation,
               userNameAsSent: widget.currentUserName,
@@ -190,11 +263,17 @@ class ChatRoomState extends State<ChatRoom> {
   }
 
   Future<Null> _handleSubmitted(String text) async {
-    _textController.clear();
-    setState(() {
-      _isComposing = false;
+    filterWording(text).then((isBad) {
+      if (isBad == true) {
+        showWarning("Decency! Some words are not allowed.", context);
+      } else {
+        _textController.clear();
+        setState(() {
+          _isComposing = false;
+        });
+        _sendMessage(text: text);
+      }
     });
-    _sendMessage(text: text);
   }
 
   void _sendMessage({String text, String imageUrl}) {
