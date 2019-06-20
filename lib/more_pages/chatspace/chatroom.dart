@@ -34,72 +34,123 @@ class ChatMessage extends StatefulWidget {
 }
 
 class ChatMessageState extends State<ChatMessage> {
+  showDeleteWarning(BuildContext context, dynamic selectedKey) {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            backgroundColor: Colors.purple[100],
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15.0)),
+            title: Text(
+              'Warning!',
+              style: TextStyle(color: Colors.red),
+            ),
+            content: Text("Delete this message ?"),
+            actions: <Widget>[
+              MaterialButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text(
+                  'close',
+                  style: TextStyle(color: Colors.black, fontSize: 15),
+                ),
+              ),
+              MaterialButton(
+                onPressed: () {
+                  reference.child(selectedKey).remove();
+
+                  Navigator.pop(context);
+                },
+                child: Text(
+                  'Delete',
+                  style: TextStyle(color: Colors.red, fontSize: 15),
+                ),
+              ),
+            ],
+          );
+        });
+  }
+
   Widget build(BuildContext context) {
     bool isSenders =
         widget.snapshot.value['senderName'] == widget.userNameAsSent;
-    return new SizeTransition(
-      sizeFactor:
-          new CurvedAnimation(parent: widget.animation, curve: Curves.easeOut),
-      axisAlignment: 0.0,
-      child: new Container(
-        margin: const EdgeInsets.symmetric(vertical: 10.0),
-        child: new Row(
-          mainAxisAlignment:
-              isSenders ? MainAxisAlignment.start : MainAxisAlignment.end,
-          children: <Widget>[
-            !isSenders
-                ? new Container(
-                    margin: const EdgeInsets.only(right: 16.0),
-                    child: new CircleAvatar(
-                      backgroundColor: Colors.purpleAccent,
-                      child: Text(
-                        widget.snapshot.value['senderName'][0],
-                        style: TextStyle(fontSize: 16.0, color: Colors.white),
+
+    return GestureDetector(
+      onLongPress: () {
+        print("pressed: " + widget.snapshot.key.toString());
+        if (isSenders) {
+          print("Proceedint to delete");
+          showDeleteWarning(context, widget.snapshot.key);
+        } else {
+          print("You did not send that!");
+        }
+      },
+      child: new SizeTransition(
+        sizeFactor: new CurvedAnimation(
+            parent: widget.animation, curve: Curves.easeOut),
+        axisAlignment: 0.0,
+        child: new Container(
+          margin: const EdgeInsets.symmetric(vertical: 10.0),
+          child: new Row(
+            mainAxisAlignment:
+                isSenders ? MainAxisAlignment.start : MainAxisAlignment.end,
+            children: <Widget>[
+              !isSenders
+                  ? new Container(
+                      margin: const EdgeInsets.only(right: 16.0),
+                      child: new CircleAvatar(
+                        backgroundColor: Colors.purpleAccent,
+                        child: Text(
+                          widget.snapshot.value['senderName'][0],
+                          style: TextStyle(fontSize: 16.0, color: Colors.white),
+                        ),
                       ),
-                    ),
-                  )
-                : Container(),
-            new Expanded(
-              child: new Column(
-                crossAxisAlignment: isSenders
-                    ? CrossAxisAlignment.end
-                    : CrossAxisAlignment.start,
-                children: <Widget>[
-                  isSenders
-                      ? Container()
-                      : new Text(widget.snapshot.value['senderName'],
-                          style: Theme.of(context).textTheme.subhead),
-                  new Container(
-                    padding: EdgeInsets.all(15.0),
-                    decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(9.0),
+                    )
+                  : Container(),
+              new Expanded(
+                child: new Column(
+                  crossAxisAlignment: isSenders
+                      ? CrossAxisAlignment.end
+                      : CrossAxisAlignment.start,
+                  children: <Widget>[
+                    isSenders
+                        ? Container()
+                        : new Text(widget.snapshot.value['senderName'],
+                            style: Theme.of(context).textTheme.subhead),
+                    new Container(
+                      padding: EdgeInsets.all(15.0),
+                      decoration: ShapeDecoration(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(9.0),
+                        ),
+                        color: Colors.purple[200],
                       ),
-                      color: Colors.purple[200],
+                      margin: const EdgeInsets.only(top: 5.0),
+                      child: //new
+                          new Text(widget.snapshot.value['text']),
                     ),
-                    margin: const EdgeInsets.only(top: 5.0),
-                    child: //new
-                        new Text(widget.snapshot.value['text']),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            SizedBox(
-              width: 10.0,
-            ),
-            !isSenders
-                ? Container()
-                : new Container(
-                    margin: const EdgeInsets.only(right: 16.0),
-                    child: new CircleAvatar(
-                      backgroundColor: Colors.purpleAccent,
-                      child: Text(
-                        widget.snapshot.value['senderName'][0],
-                        style: TextStyle(fontSize: 16.0, color: Colors.white),
+              SizedBox(
+                width: 10.0,
+              ),
+              !isSenders
+                  ? Container()
+                  : new Container(
+                      margin: const EdgeInsets.only(right: 16.0),
+                      child: new CircleAvatar(
+                        backgroundColor: Colors.purpleAccent,
+                        child: Text(
+                          widget.snapshot.value['senderName'][0],
+                          style: TextStyle(fontSize: 16.0, color: Colors.white),
+                        ),
                       ),
                     ),
-                  ),
-          ],
+            ],
+          ),
         ),
       ),
     );
