@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import './more_pages/chatspace/bot.dart';
 import './more_pages/chatspace/chatroom.dart';
+import './more_pages/chatspace/model/word_receipt.dart';
 
 class Ongea extends StatefulWidget {
   @override
@@ -21,11 +22,7 @@ bool isLoggedIn = false;
 TextEditingController userName = new TextEditingController();
 List<WordReceipt> list;
 
-class WordReceipt {
-  final String name;
 
-  WordReceipt({this.name});
-}
 
 class OngeaState extends State<Ongea> {
   void _onSelectedOption(int index) {
@@ -152,7 +149,7 @@ class OngeaState extends State<Ongea> {
                             ? _widgetIconColorsSelected
                             : _widgetIconColorsNormal),
                     title: new Text(
-                      'Helper',
+                      'Assistant',
                       style: TextStyle(color: Colors.purple),
                     )),
               ],
