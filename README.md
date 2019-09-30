@@ -1,16 +1,41 @@
 # welinda_app
 
-A new Flutter project.
+This is a Flutter project that aims to provide a platform for those affected by gender-based violence to reach out by reporting the cases to the relevant people in charge, share their predicaments with others in the Chatroom section, they can also watch videos of those who were previous victims taliking about their experiences.
 
-## Getting Started
+## To contribute.
 
-This project is a starting point for a Flutter application.
+To contribute to this project, fork the repo, then clone the forked repo from your github account
 
-A few resources to get you started if this is your first Flutter project:
+$git clone https://github.com/JosephineAkello/weLinda-app.git 
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+To install dependencies run
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+        flutter packages get or flutter pub get
+
+To get started, create remote with name upstream using:
+
+    $git remote add upstream https://github.com/JosephineAkello/weLinda-app.git
+
+Before working on an issue ensure your local repo is upto date by running:
+
+    $git pull upstream develop
+
+To create a branch run:
+
+    $git checkout -b <branchname>
+
+To analyze the project run:
+
+    $flutter analyze
+
+To run the project:
+
+    $flutter run
+
+To clean the project run:
+
+    $flutter clean
+
+To build apk run:
+
+    $flutter build apk
